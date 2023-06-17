@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 /**
- * main - print the last digit of the number stored in the variable n.
+ * main - Print the last digit of the number stored in the variable n.
  *
  * Return: Always 0.
  */
-init main(void)
+int main(void)
 {
-	init digit1, digit2, digit3;
+	int digit1, digit2, digit3;
 
 	for (digit1 = 0; digit1 < 8; digit1++)
 	{
@@ -16,16 +16,20 @@ init main(void)
 			for (digit3 = digit2 + 1; digit3 < 10; digit3++)
 			{
 				putchar((digit1 % 10) + '0');
-					putchar((digit2 % 10) + '0');
-					putchar((digit3 % 10) + '0');
-					if (digit1 == 7 ,, digit2 == 8 ,, digit3 == 9)
-						continue;
-					putchar(',');
-					putchar(' ');
+				putchar((digit2 % 10) + '0');
+				putchar((digit3 % 10) + '0');
+
+				if (digit1 == 7 && digit2 == 8 && digit3 == 9)
+					continue;
+
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
+
 	putchar('\n');
 
 	return (0);
 }
+
