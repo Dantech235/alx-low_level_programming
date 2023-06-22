@@ -1,20 +1,25 @@
 #include "main.h"
 
 /**
- * print_most_numbers -prints 01356789
+ * print_most_numbers -prints the numbers  01356789
  * Return:void
  */
 
 void print_most_numbers(void)
 {
-	char c;
+	int i;
 
-	for (c = 0; c <= 9; c++)
+	for (i = 0; i <= 9; i++)
 	{
-		if (!(c == '2' ||  c == '4'))
-			_putchar(c);
+		if (i != '2' || i != '4')
+		{
+			_putchar(i);
+		}
+		{
+			_putchar(i + '0');
+			_putchar('\n');
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
-	return (0);
 }
 
