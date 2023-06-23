@@ -2,7 +2,8 @@
 
 /**
  * print_triangle - entry point
- * @size: size of the triangle
+ * Description: print a triangle
+ * @size: size of the triangke
  * Return: void
  */
 
@@ -22,7 +23,7 @@ void print_triangle(int size)
 			{
 				_putchar(' ');
 			}
-			for (hashes = 1; hashes <= row; hashes++)
+			for (hashes = 1; hashes <= size; hashes++)
 			{
 				_putchar('#');
 			}
